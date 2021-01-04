@@ -63,10 +63,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="gallery-grids">
 							<div class="gallery-grid">
 								<div class="gallery-grid1">
-									<a class="lightbox" href="#two">
+									<a class="lightbox" href="#two" onclick=${onclick}>
 										<img src="img/beard5.jpg" alt="" />
 									</a>
-									<div class="lightbox-target" name="two">
+									<div class="lightbox-target" id="two">
 										<img src="img/beard5.jpg" alt="" />
 										<a class="lightbox-close" href="#"> </a>
 
@@ -75,10 +75,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 								</div>
 								<div class="gallery-grid1">
-									<a class="lightbox" href="#one">
+									<a class="lightbox" href="#one" onclick=${onclick}>
 										<img src="img/beard7.jpg" alt="" />
 									</a>
-									<div class="lightbox-target" name="one">
+									<div class="lightbox-target" id="one">
 										<img src="img/beard7.jpg" alt="" />
 										<a class="lightbox-close" href="#"> </a>
 
@@ -186,6 +186,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div id="thumb-forward"></div>
 	</div>
 	
-	
+	<script>
+           function onclick (event) {
+  var el = document.getElementById(event.target.hash.substr(1))
+  if (el) el.scrollIntoView({behavior: 'smooth', block: 'start'})
+  event.preventDefault()
+}
+
+        </script>
 </body>
 </html>
