@@ -37,7 +37,7 @@
 														
 														{image : 'img/beard14.jpg', title : 'image', thumb : 'img/beard14.jpg'},
 														{image : 'img/beard1.jpg', title : 'image', thumb : 'img/beard1.jpg'},
-														{image : 'img/beard201.jpg', title : 'Image', thumb : 'img/beard201jpg'},
+														{image : 'img/beard201.jpg', title : 'Image', thumb : 'img/beard.201jpg'},
 														{image : 'img/beard10.jpg', title : 'Image', thumb : 'img/beard10.jpg'},
 														
 												],
