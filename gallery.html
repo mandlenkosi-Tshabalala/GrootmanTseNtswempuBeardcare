@@ -49,7 +49,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				speed: 300
 			});
 			
-			function onclick (event) {
+			function onclick () {
   var el = document.getElementById('one')
   if (el) el.scrollIntoView({behavior: 'smooth', block: 'start'})
   event.preventDefault();
@@ -78,7 +78,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="gallery-grids">
 							<div class="gallery-grid">
 								<div class="gallery-grid1">
-									<a class="lightbox" href="/" onclick=${onclick}>
+									<a class="lightbox" href="/" onclick="onclick()">
 										<img src="img/beard5.jpg" alt="" />
 									</a>
 									<div class="lightbox-target" id="two">
@@ -90,7 +90,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 								</div>
 								<div class="gallery-grid1">
-									<a class="lightbox" href="/" onclick=${onclick}>
+									<a class="lightbox" href="/" onclick="onclick()">
 										<img src="img/beard7.jpg" alt="" />
 									</a>
 									<div class="lightbox-target" id="one">
