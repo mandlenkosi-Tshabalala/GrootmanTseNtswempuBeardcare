@@ -43,6 +43,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				circleSize: 2,
 				speed: 300
 			});
+			
+			function onclick (event) {
+  var el = document.getElementById(event.target.hash.substr(1))
+  if (el) el.scrollIntoView({behavior: 'smooth', block: 'start'})
+  event.preventDefault()
+}
+
 
 		</script>
 		<div class="clear"></div>
@@ -190,12 +197,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	
 	<script>
-           function onclick (event) {
-  var el = document.getElementById(event.target.hash.substr(1))
-  if (el) el.scrollIntoView({behavior: 'smooth', block: 'start'})
-  event.preventDefault()
-}
-
+           
         </script>
 </body>
 </html>
